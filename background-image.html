@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-image</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        color:green;
+    }
+    p{
+        font-size:25px;
+    }
+    .code{
+        margin-left:20%;
+        
+    }
+</style>
+<body>
+    <h1>Background Image</h1><hr>
+    <p>When we attempt to set an image as a background to occupy the full screen using HTML and CSS, 
+        it does cover the entire screen, but often, most of the background image gets cut off, not appearing as we intended (out of shape).</p>
+    <p> To address this issue, we can use the following CSS  properties:</p>
+    <p class="code">
+        <b>body{<br>
+            margin:10px;<br>
+            background-image: url("background.jpg"); <-- address or link of your image --><br>
+            background-size:100% 100%;<br>
+            background-repeat: no-repeat;<br>
+            background-position: cover;<br>
+            
+        }</b>
+    </p>
+    
+</body>
+</html>
